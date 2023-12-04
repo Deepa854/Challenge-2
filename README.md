@@ -1,9 +1,13 @@
 # Front-end development(problem statment)
 
 Frontend Job Challenge Vanilla JS
+
+
 Write a JavaScript function to calculate the total marks of each student and add that marks in the object for each student. 
 Print the final array of objects to the console.
 Print only the names of all the students whose total marks is above 445.
+
+
 const studentsMarks = [
   { name: "Preethi", rollNo: 301, chemistry: 78, maths: 88, commerce: 90, physicalEducation: 90 },
   { name: "Priya", rollNo: 302, chemistry: 75, maths: 90, commerce: 85, physicalEducation: 94 },
@@ -26,10 +30,11 @@ const appData = [
 Write a JavaScript function to calculate these things and print them to console based on the given data:
 Total Average of Chemistry
 Total Average of Maths
+
 Total Average of Commerce
 const studentsData = [
-  { name: "Rahul", rollNo: 201, chemistry: 88, maths: 78, commerce: 92, physicalEducation: 90, moralScience: 85, totalMarks: 433, avgMarks: 86.6 },
-  { name: "Priya", rollNo: 202, chemistry: 75, maths: 90, commerce: 85, physicalEducation: 94, moralScience: 88, totalMarks: 432, avgMarks: 86.4 },
+   { name: "Rahul", rollNo: 201, chemistry: 88, maths: 78, commerce: 92, physicalEducation: 90, moralScience: 85, totalMarks: 433, avgMarks: 86.6 },
+   { name: "Priya", rollNo: 202, chemistry: 75, maths: 90, commerce: 85, physicalEducation: 94, moralScience: 88, totalMarks: 432, avgMarks: 86.4 },
   { name: "Amit", rollNo: 203, chemistry: 82, maths: 95, commerce: 88, physicalEducation: 92, moralScience: 90, totalMarks: 447, avgMarks: 89.4 },
   { name: "Neha", rollNo: 204, chemistry: 95, maths: 96, commerce: 94, physicalEducation: 99, moralScience: 99, totalMarks: 483, avgMarks: 96.6 },
   { name: "Anita", rollNo: 205, chemistry: 85, maths: 92, commerce: 89, physicalEducation: 91, moralScience: 86, totalMarks: 443, avgMarks: 88.6 }
@@ -39,6 +44,7 @@ Write a JavaScript function to calculate and print the following details:
 Print the app name, downloads, category and rating of the app with the highest rating.
 Print the average user age.
 Print the details of medicine app which has more than 10000 downloads.
+
 const appsData = [
   { appName: "App 1", rating: 4.2, minUserAge: 12, downloads: 4000, category: "games" },
   { appName: "App 2", rating: 4.5, minUserAge: 18, downloads: 9000, category: "education" },
@@ -50,6 +56,7 @@ const appsData = [
 Given the project details of a particular quarter of a company. Write a JavaScript function to calculate and print the following details:
 print the average team size
 print the total budget of the quarter
+
 const projectDetails = [
   { projectName: "Project A", teamSize: 8, budget: 120000 },
   { projectName: "Project B", teamSize: 12, budget: 180000 },
@@ -61,6 +68,7 @@ const projectDetails = [
 Given the employee details of a company. Write a JavaScript function to calculate and print the following details:
 print the average age of the employees in the company
 print the details of the employee with maximum experience
+
 const employeeData = [
   { employeeName: "John Doe", age: 35, department: "HR", experience: 7 },
   { employeeName: "Jane Smith", age: 42, department: "Finance", experience: 12 },
@@ -74,6 +82,7 @@ print the total number of purchases made from city “A”.
 print the average age of the customers of the state.
 print the total number of purchases made from city “D” and “C”.
 print the average age of customers of city “D”.
+
 const customerData = [
   { customerName: "Alice", age: 28, address: "123 Street", city: "A", totalPurchases: 5 },
   { customerName: "Bob", age: 35, address: "456 Avenue", city: "D", totalPurchases: 8 },
@@ -99,6 +108,7 @@ Print the total number of purchases made from city “Z”.
 Calculate and print the average age of the customers in the state.
 Print the total number of purchases made from city “X” and “Y”.
 Calculate and print the average age of customers residing in city “X” and “Y”.
+
 const customerData = [
   { customerName: "Eva", age: 31, address: "789 Lane", city: "X", totalPurchases: 7 },
   { customerName: "Frank", age: 29, address: "456 Street", city: "Z", totalPurchases: 8 },
@@ -112,6 +122,7 @@ Given the employee details of a company. Write a JavaScript function to calculat
 Print the total number of projects in progress by employees from the "Marketing" department.
 Print the total number of projects completed by employees from the "Marketing" and "Sales" departments.
 Calculate and print the average age of employees working in the "Sales" department.
+
 const employeeData = [
   { employeeName: "Alex", age: 28, department: "Development", projectsCompleted: 5, projectsInProgress: 3 },
   { employeeName: "Beth", age: 35, department: "Marketing", projectsCompleted: 8, projectsInProgress: 5 },
