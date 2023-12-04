@@ -1,4 +1,3 @@
-// Function to calculate average rating and total downloads
 function calculateAppStats(appData) {
     const totalRatings = appData.reduce((sum, app) => sum + app.rating, 0);
     const averageRating = totalRatings / appData.length;
@@ -9,7 +8,7 @@ function calculateAppStats(appData) {
     console.log("Total Downloads:", totalDownloads);
   }
   
-  // Example usage
+  
   const appData = [
     { appName: "App 1", rating: 4, downloads: 5000 },
   { appName: "App 2", rating: 4, downloads: 8000 },

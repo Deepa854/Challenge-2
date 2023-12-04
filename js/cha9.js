@@ -1,26 +1,20 @@
-// Function to calculate and print customer details
+
 function calculateCustomerDetails(customerData) {
-    // 1. Total number of purchases made from city “Z”
-    const totalPurchasesCityZ = customerData
+   const totalPurchasesCityZ = customerData
       .filter(customer => customer.city === 'Z')
       .reduce((total, customer) => total + customer.totalPurchases, 0);
     console.log("Total Purchases from City Z:", totalPurchasesCityZ);
   
-    // 2. Average age of the customers in the state
     const averageAge = customerData.reduce((sum, customer) => sum + customer.age, 0) / customerData.length;
     console.log("Average Age of Customers in the State:", averageAge.toFixed(2));
   
-    // 3. Total number of purchases made from city “X” and “Y”
-    const totalPurchasesCityX = customerData
-      .filter(customer => customer.city === 'X')
-      .reduce((total, customer) => total + customer.totalPurchases, 0);
-    const totalPurchasesCityY = customerData
-      .filter(customer => customer.city === 'Y')
-      .reduce((total, customer) => total + customer.totalPurchases, 0);
+   
+    const totalPurchasesCityX = customerData.filter(customer => customer.city === 'X').reduce((total, customer) => total + customer.totalPurchases, 0);
+    const totalPurchasesCityY = customerData.filter(customer => customer.city === 'Y').reduce((total, customer) => total + customer.totalPurchases, 0);
     console.log("Total Purchases from City X:", totalPurchasesCityX);
     console.log("Total Purchases from City Y:", totalPurchasesCityY);
   
-    // 4. Average age of customers residing in city “X” and “Y”
+   
     const customersCityX = customerData.filter(customer => customer.city === 'X');
     const customersCityY = customerData.filter(customer => customer.city === 'Y');
     const averageAgeCityX = customersCityX.length > 0 ?
@@ -33,7 +27,7 @@ function calculateCustomerDetails(customerData) {
     console.log("Average Age of Customers in City Y:", averageAgeCityY.toFixed(2));
   }
   
-  // Example usage
+ 
   var customerData = [
     { customerName: "Eva", age: 31, address: "789 Lane", city: "X", totalPurchases: 7 },
     { customerName: "Frank", age: 29, address: "456 Street", city: "Z", totalPurchases: 8 },

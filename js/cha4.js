@@ -1,25 +1,19 @@
-// File: frontend_challenge_4.js
-
-// Function to find app with highest rating
 function findHighestRatedApp(appsData) {
     const highestRatedApp = appsData.reduce((maxApp, app) => (app.rating > maxApp.rating ? app : maxApp), appsData[0]);
     console.log("Details of App with Highest Rating:", highestRatedApp);
   }
   
-  // Function to calculate average user age
   function calculateAverageUserAge(appsData) {
     const totalAge = appsData.reduce((sum, app) => sum + app.minUserAge, 0);
     const averageAge = totalAge / appsData.length;
     console.log("Average User Age:", averageAge.toFixed(2));
   }
   
-  // Function to find medicine app with more than 10000 downloads
   function findMedicineAppWithHighDownloads(appsData) {
     const medicineApp = appsData.find(app => app.category === "medicine" && app.downloads > 10000);
     console.log("Details of Medicine App with More Than 10000 Downloads:", medicineApp);
   }
   
-  // Example usage
   const appsData = [
     { appName: "App 1", rating: 4.2, minUserAge: 12, downloads: 4000, category: "games" },
   { appName: "App 2", rating: 4.5, minUserAge: 18, downloads: 9000, category: "education" },
